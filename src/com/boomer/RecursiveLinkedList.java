@@ -31,7 +31,6 @@ public class RecursiveLinkedList {
     private Node linearizeNodes(Node node){
         Node itr = node;
         while(true){
-            System.out.print(itr.val);
             if(itr.branch!=null){
                 linearizeNodes(itr.branch).next = itr.next;
                 itr.next = itr.branch;
@@ -50,7 +49,7 @@ public class RecursiveLinkedList {
         Node itr = head;
         while(true){
             if(itr!=null){
-                System.out.println(itr.val);
+                System.out.print("|:"+itr.val);
                 if(itr.next!=null){
                     itr = itr.next;
                 }else{

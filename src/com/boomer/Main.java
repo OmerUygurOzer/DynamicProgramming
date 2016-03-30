@@ -26,6 +26,7 @@ public class Main {
             bst.printPaths();
             */
 
+            /*
             RecursiveLinkedList recursiveLinkedListA = new RecursiveLinkedList(); //On the diagram
             recursiveLinkedListA.add(1);
             recursiveLinkedListA.add(2);
@@ -54,8 +55,23 @@ public class Main {
             recursiveLinkedListD.add(23);
             recursiveLinkedListD.add(6);
 
-            recursiveLinkedListD.linearize();
+            //recursiveLinkedListD.linearize();
             recursiveLinkedListD.print();
 
+            System.out.println("");
+            recursiveLinkedListD.linearize();
+
+            recursiveLinkedListD.print();
+            */
+
+            AnagramFinder anagramFinder = new AnagramFinder();
+
+            anagramFinder.add("star");
+            anagramFinder.add("dog");
+            anagramFinder.add("car");
+            anagramFinder.add("rats");
+            anagramFinder.add("arc");
+
+            System.out.println(anagramFinder.findAnagrams());
     }
 }
