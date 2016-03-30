@@ -55,7 +55,7 @@ public class Main {
             recursiveLinkedListD.add(6);
 
             recursiveLinkedListD.linearize();
-
+            recursiveLinkedListD.print();
 
     }
 }

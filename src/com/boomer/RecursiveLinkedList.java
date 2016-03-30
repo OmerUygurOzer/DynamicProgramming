@@ -28,20 +28,36 @@ public class RecursiveLinkedList {
             linearizeNodes(head);
     }
 
-    private void linearizeNodes(Node node){
+    private Node linearizeNodes(Node node){
         Node itr = node;
         while(true){
             System.out.print(itr.val);
-            if(itr.branch!=null){linearizeNodes(itr.branch);}
+            if(itr.branch!=null){
+                linearizeNodes(itr.branch).next = itr.next;
+                itr.next = itr.branch;
+                itr.branch = null;
+            }
             if(itr.next==null){
-                itr.next = node.next;
-                node.next = node.branch;
-                break;
+                return itr;
             }else {
                 itr = itr.next;
             }
         }
 
+    }
+
+    public void print(){
+        Node itr = head;
+        while(true){
+            if(itr!=null){
+                System.out.println(itr.val);
+                if(itr.next!=null){
+                    itr = itr.next;
+                }else{
+                    break;
+                }
+            }
+        }
     }
 
 
