@@ -82,11 +82,30 @@ public class Main {
             MoveZeros.process(vals);
             */
 
-
+            /*
            int[] ar1 = new int[]{0,2,4,18,24,28};
            int[] ar2 = new int[]{1,3,5,7,9,11};
 
             ArrayMerger.mergeTwoArrays(ar1,ar2);
+            */
+
+            ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+            reverseLinkedList.add(1);
+            reverseLinkedList.add(5);
+            reverseLinkedList.add(7);
+            reverseLinkedList.add(9);
+            reverseLinkedList.add(11);
+            reverseLinkedList.add(3);
+
+            reverseLinkedList.print();
+            reverseLinkedList.reverseList();
+            reverseLinkedList.print();
+            reverseLinkedList.reverseList();
+            reverseLinkedList.print();
+
+            //reverseLinkedList.printInReverse();
+
+
 
 
     }

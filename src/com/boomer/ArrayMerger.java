@@ -43,7 +43,8 @@ public class ArrayMerger {
     }
 
 
-    public static int[] mergeNArrays(int[]... arrays){
+
+    public static int[] mergeNSortedArrays(int[]... arrays){
         return null;
     }
 }
