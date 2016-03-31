@@ -83,7 +83,7 @@ public class Main {
             */
 
 
-           int[] ar1 = new int[]{0,2,4,6,8,10};
+           int[] ar1 = new int[]{0,2,4,18,24,28};
            int[] ar2 = new int[]{1,3,5,7,9,11};
 
             ArrayMerger.mergeTwoArrays(ar1,ar2);

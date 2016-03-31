@@ -19,13 +19,21 @@ public class ArrayMerger {
 
         while(ptr1 <ar1.length && ptr2<ar2.length){
             if(ar1[ptr1]<ar2[ptr2]){
-                newAr[ptrNew]=ar1[ptr1];
-                ptr1++;
+                newAr[ptrNew++]=ar1[ptr1++];
+            }else if(ar1[ptr1]>ar2[ptr2]){
+                newAr[ptrNew++]=ar2[ptr2++];
             }else{
-                newAr[ptrNew]=ar2[ptr2];
-                ptr2++;
+                newAr[ptrNew++]=ar1[ptr1++];
+                newAr[ptrNew++]=ar2[ptr2++];
             }
-            ptrNew++;
+        }
+
+        while(ptr1<ar1.length){
+            newAr[ptrNew++] = ar1[ptr1++];
+        }
+
+        while(ptr2<ar2.length){
+            newAr[ptrNew++] = ar2[ptr2++];
         }
 
         for(int i :newAr){
