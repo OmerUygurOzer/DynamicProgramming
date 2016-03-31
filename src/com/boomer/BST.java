@@ -59,9 +59,34 @@ public class BST {
     }
 
 
+    /*
+    Find the question at: https://www.glassdoor.com/Interview/Algorithm-question-was-how-to-find-the-lowest-common-ancestor-for-a-binary-tree-Then-find-a-solution-that-is-linear-for-s-QTN_570882.htm
+     */
+    public int LCA(int v1,int v2){
+        int lca = root.val;
+        Node cur = root;
+        while(true){
+            if(v1>cur.val && v2>cur.val){
+                if(cur.right==null){
 
+                    break;
+                }else{
+                    cur = cur.right;
+                }
+            }else if(v1<cur.val && v2<cur.val){
+                if(cur.left==null){
 
+                    break;
+                }else{
+                    cur = cur.left;
+                }
+            }else if ((v1<cur.val && v2>cur.val)||(v2<cur.val && v1>cur.val)||(v1==cur.val)||(v2==cur.val)){
+                return cur.val;
+            }
 
+        }
+        return lca;
+    }
 
 
 

@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by Omer on 3/30/2016.
  */
+
+/*
+ Find the question at: https://www.glassdoor.com/Interview/Given-a-set-of-random-strings-write-a-function-that-returns-a-set-that-groups-all-the-anagrams-together-Ex-star-dog-ca-QTN_1452291.htm
+ */
 public class AnagramFinder {
     public List<String> stringList = new ArrayList<>();
 

@@ -23,7 +23,9 @@ public class Main {
             bst.add(27);
             bst.add(32);
 
-            bst.printPaths();
+            //bst.printPaths();
+
+            System.out.println(bst.LCA(16,32));
             */
 
             /*
@@ -64,6 +66,7 @@ public class Main {
             recursiveLinkedListD.print();
             */
 
+            /*
             AnagramFinder anagramFinder = new AnagramFinder();
 
             anagramFinder.add("star");
@@ -73,5 +76,18 @@ public class Main {
             anagramFinder.add("arc");
 
             System.out.println(anagramFinder.findAnagrams());
+            */
+            /*
+            int[] vals = new int[]{0,4,5,3,1,0,7,5,1,0,9,0,1,3,0,7};
+            MoveZeros.process(vals);
+            */
+
+
+           int[] ar1 = new int[]{0,2,4,6,8,10};
+           int[] ar2 = new int[]{1,3,5,7,9,11};
+
+            ArrayMerger.mergeTwoArrays(ar1,ar2);
+
+
     }
 }
