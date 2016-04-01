@@ -2,6 +2,9 @@ package com.boomer;
 
 public class Main {
 
+        /*
+        All drivers here
+         */
     public static void main(String[] args) {
            // KnapsackProblemSolver.solve(20,5);
            //System.out.println(IsPalindrome.check("ASDSA"));
@@ -89,6 +92,7 @@ public class Main {
             ArrayMerger.mergeTwoArrays(ar1,ar2);
             */
 
+            /*
             ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
             reverseLinkedList.add(1);
             reverseLinkedList.add(5);
@@ -105,7 +109,21 @@ public class Main {
 
             //reverseLinkedList.printInReverse();
 
+                */
 
+            //FindPalindromeSubStrings.process("jkjhkjhkjh");
+            /*
+            int[][] colors = new int[][]{{1,1,1,3,1},
+                                         {2,1,4,3,2},
+                                         {3,2,1,4,3},
+                                         {2,2,1,3,4},
+                                         {1,4,3,3,4}};
+
+            FindColorGroups.find(colors);
+            */
+
+            int[][]dominoes = new int[][]{{2,5},{3,4},{4,1}};
+            System.out.println(DominoSum.findSix(dominoes));
 
 
     }
