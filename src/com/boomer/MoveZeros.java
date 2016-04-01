@@ -7,6 +7,7 @@ package com.boomer;
 /*
  Find question at: https://www.glassdoor.com/Interview/Given-an-array-of-ints-6-4-0-5-0-0-0-1-0-move-all-non-zero-numbers-to-the-left-and-zeros-to-the-right-How-can-QTN_961526.htm
  */
+
 public class MoveZeros {
     public static void process(int[] vals){
         int len = vals.length-1;
@@ -22,8 +23,8 @@ public class MoveZeros {
 
         }
 
-        for(int i  = 0; i < vals.length;i++){
-            System.out.print(vals[i]);
+        for (int val : vals) {
+            System.out.print(val);
         }
     }
 }

@@ -2,6 +2,7 @@ package com.boomer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * Created by Omer on 3/30/2016.
@@ -86,6 +87,52 @@ public class BST {
 
         }
         return lca;
+    }
+
+
+    /*
+    Find the question at : https://www.glassdoor.com/Interview/Facebook-Software-Engineer-Interview-Questions-EI_IE40772.0,8_KO9,26_IP2.htm
+     */
+
+    /*
+    Refer to BST - B on the notes
+     */
+    public static boolean doesHaveSame(BST bst1,BST bst2){
+
+
+
+        return false;
+    }
+
+
+    public void inOrderTraverse(){
+        if (root == null) {
+            return;
+        }
+
+        Stack<Node> stack = new Stack<Node>();
+        Node node = root;
+
+
+        while (node != null) {
+            stack.push(node);
+            node = node.left;
+        }
+
+        while (stack.size() > 0) {
+
+            node = stack.pop();
+            System.out.print(node.val + " ");
+            if (node.right != null) {
+                node = node.right;
+
+
+                while (node != null) {
+                    stack.push(node);
+                    node = node.left;
+                }
+            }
+        }
     }
 
 

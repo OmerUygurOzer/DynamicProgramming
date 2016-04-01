@@ -122,9 +122,15 @@ public class Main {
             FindColorGroups.find(colors);
             */
 
+            /*
             int[][]dominoes = new int[][]{{2,5},{3,4},{4,1}};
             System.out.println(DominoSum.findSix(dominoes));
+            */
 
+
+            //int [] set = new int[]{1,3,9,2};
+            //System.out.println(SubsetSum.general(set,15));
+            //System.out.println(SubsetSum.sumOfThree(set,12));
 
     }
 }
