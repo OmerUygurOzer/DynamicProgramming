@@ -133,7 +133,9 @@ public class BST {
         int[] d;
         for(Integer key: levelDeets.keySet()){
             d = levelDeets.get(key);
-            System.out.print("Level:"+key + "   Avg:"+d[1]/d[0]);
+            int lvl = key+1;
+            System.out.print("Level:"+lvl + "   Avg:"+d[1]/d[0]);
+            System.out.println();
         }
 
     }
