@@ -10,7 +10,7 @@ public class Main {
            //System.out.println(IsPalindrome.check("ASDSA"));
            //System.out.println(IsPalindrome.check("asdasdsadsad"));
 
-            /*
+
             BST bst = new BST(); //BST A from the Diagram posted
             bst.add(20);
             bst.add(16);
@@ -26,9 +26,10 @@ public class Main {
             bst.add(27);
             bst.add(32);
 
-            bst.inOrderTraverse();
+            //bst.verticalOrderSum();
+            bst.printAverageValueByLevel();
+            //bst.inOrderTraverse();
             //bst.printPaths();
-
             //System.out.println(bst.LCA(16,32));
 
 
@@ -136,7 +137,7 @@ public class Main {
 
             //System.out.println(CanBePalindrome.check("DOOR"));
             //System.out.println(CanBePalindrome.check("MMO"));
-
+            /*
             int[][] map = new int[][]
                     {       {0,0,0,0,0,0,0,0},
                             {0,0,0,0,0,0,0,0},
@@ -148,7 +149,19 @@ public class Main {
                             {0,0,0,0,0,0,0,0}
             };
 
-            DoubleArrayTraversal.getShortestPath(map,0,7,5,3);
+            System.out.println(DoubleArrayTraversal.getShortestPath(map,0,7,5,3));
+            */
+
+            //System.out.println(ReverseWordsInString.reverse("this string will be reversed , and you won't be able to read it!!"));
+
+            /*
+            //Unsorted Array B
+            int arr[] = new int[]{5,7,8,3,5,2,8,5,1,0};
+            EraseDuplicatesInArray.erase(arr);
+            for(int i = 0; i < arr.length;i++){
+            System.out.print("|"+arr[i]+"|");
+            }
+            */
 
     }
 }

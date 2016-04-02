@@ -1,6 +1,7 @@
 package com.boomer;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
@@ -101,10 +102,59 @@ public class BST {
 
 
 
+
         return false;
     }
 
+    /*
+      Find the question at : https://www.glassdoor.com/Interview/Behavior-past-project-and-what-s-the-funest-thing-in-it-1-Erase-duplicate-in-an-unsorted-array-2-Average-value-by-lev-QTN_1409825.htm
+     */
+    public void verticalOrderSum(){
+        HashMap<Integer,Integer> vSum = new HashMap<>();
+        processNodeVOS(root,vSum,0);
+        System.out.println(vSum);
+    }
 
+    //Complimentary to above question/method
+    private void processNodeVOS(Node n, HashMap<Integer,Integer> vSum,int distance){
+        if(vSum.get(distance)==null){vSum.put(distance,0);}
+        vSum.put(distance,vSum.get(distance)+n.val);
+        if(n.left!=null){processNodeVOS(n.left,vSum,distance-1);}
+        if(n.right!=null){processNodeVOS(n.right,vSum,distance+1);}
+    }
+
+    /*
+      Find the question at : https://www.glassdoor.com/Interview/Behavior-past-project-and-what-s-the-funest-thing-in-it-1-Erase-duplicate-in-an-unsorted-array-2-Average-value-by-lev-QTN_1409825.htm
+     */
+
+    public void printAverageValueByLevel(){
+        HashMap<Integer,int[]> levelDeets = new HashMap<>();
+        processNodeAvg(root,levelDeets,0);
+        int[] d;
+        for(Integer key: levelDeets.keySet()){
+            d = levelDeets.get(key);
+            System.out.print("Level:"+key + "   Avg:"+d[1]/d[0]);
+        }
+
+    }
+
+    //Complimentary to above question/method
+    private void processNodeAvg(Node n,HashMap<Integer,int[]> lDeets,int level){
+        if(lDeets.get(level)==null){
+            int[] d = new int[2];
+            d[0]=0;
+            d[1]=0;
+            lDeets.put(level,d);
+        }
+
+        lDeets.get(level)[0]++;
+        lDeets.get(level)[1]+=n.val;
+        if(n.left !=null)processNodeAvg(n.left,lDeets,level+1);
+        if(n.right!=null)processNodeAvg(n.right,lDeets,level+1);
+    }
+
+
+    //Non recursive
     public void inOrderTraverse(){
         if (root == null) {
             return;

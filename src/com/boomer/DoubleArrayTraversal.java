@@ -123,12 +123,7 @@ public class DoubleArrayTraversal {
             itr=itr.from;
         }
 
-        System.out.println(path);
-
-
-
-
-        return null;
+        return path;
     }
 
     public static float getDist(int x1,int y1,int x2,int y2){
