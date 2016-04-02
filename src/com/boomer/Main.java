@@ -26,10 +26,11 @@ public class Main {
             bst.add(27);
             bst.add(32);
 
+            bst.inOrderTraverse();
             //bst.printPaths();
 
-            System.out.println(bst.LCA(16,32));
-            */
+            //System.out.println(bst.LCA(16,32));
+
 
             /*
             RecursiveLinkedList recursiveLinkedListA = new RecursiveLinkedList(); //On the diagram
@@ -131,6 +132,23 @@ public class Main {
             //int [] set = new int[]{1,3,9,2};
             //System.out.println(SubsetSum.general(set,15));
             //System.out.println(SubsetSum.sumOfThree(set,12));
+
+
+            //System.out.println(CanBePalindrome.check("DOOR"));
+            //System.out.println(CanBePalindrome.check("MMO"));
+
+            int[][] map = new int[][]
+                    {       {0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0},
+                            {0,0,1,1,1,0,0,0},
+                            {0,0,1,0,1,0,0,0},
+                            {0,0,1,0,1,0,0,0},
+                            {0,0,0,0,0,0,0,0}
+            };
+
+            DoubleArrayTraversal.getShortestPath(map,0,7,5,3);
 
     }
 }
