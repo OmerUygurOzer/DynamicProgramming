@@ -1,9 +1,6 @@
 package com.boomer;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by Omer on 3/30/2016.
@@ -155,8 +152,23 @@ public class BST {
         if(n.right!=null)processNodeAvg(n.right,lDeets,level+1);
     }
 
+    //Level Order, BFS
+    public void levelOrderTraversal(){
+        Queue queue = new LinkedList<>();
+        queue.add(root);
 
-    //Non recursive
+        Node cur;
+
+        while(!queue.isEmpty()){
+             cur = (Node) queue.remove();
+             System.out.println(cur.val);
+             if(cur.left!=null){queue.add(cur.left);}
+             if(cur.right!=null){queue.add(cur.right);}
+        }
+
+    }
+
+    //Non recursive DFS,In Order
     public void inOrderTraverse(){
         if (root == null) {
             return;

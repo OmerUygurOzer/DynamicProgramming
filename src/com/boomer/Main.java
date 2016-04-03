@@ -11,6 +11,7 @@ public class Main {
            //System.out.println(IsPalindrome.check("asdasdsadsad"));
 
 
+            /*
             BST bst = new BST(); //BST A from the Diagram posted
             bst.add(20);
             bst.add(16);
@@ -26,12 +27,13 @@ public class Main {
             bst.add(27);
             bst.add(32);
 
+            bst.levelOrderTraversal();
             //bst.verticalOrderSum();
-            bst.printAverageValueByLevel();
+            //bst.printAverageValueByLevel();
             //bst.inOrderTraverse();
             //bst.printPaths();
             //System.out.println(bst.LCA(16,32));
-
+            */
 
             /*
             RecursiveLinkedList recursiveLinkedListA = new RecursiveLinkedList(); //On the diagram
@@ -162,6 +164,29 @@ public class Main {
             System.out.print("|"+arr[i]+"|");
             }
             */
+
+            /*
+            int[] ar1 = new int[]{1,5,12,25,75,108,109};
+            int[] ar2 = new int[]{2,4,7,8,15,25,32};
+            int[] ar3 = new int[]{0,9,52,62,74,89,98};
+
+            int[] newAr = ArrayMerger.mergeNSortedArrays(ar1,ar2,ar3);
+
+            for(int i:newAr){
+                    System.out.println(i);
+            }
+            */
+
+
+            //int [] unsorted = new int[]{8,1,2,5,9,26,31,7};
+            //System.out.println(FindKthSmallestValue.findWithHeap(unsorted,4));
+
+
+            //int [] arr = new int[] {1,-8,4,3,-2,7,5,-4,3,-12};
+            //System.out.println(SubArraySum.findMin(arr));
+
+            int [] ary = new int[]{2,0,1,1,2,0,1,1,2,0,1,2,0,0};
+            DutchFlagSort.sort(ary);
 
     }
 }
