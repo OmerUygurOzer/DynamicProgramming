@@ -200,6 +200,25 @@ public class BST {
     }
 
 
+    /*
+    Find the question at : https://www.glassdoor.com/Interview/Verify-a-binary-search-tree-QTN_1369405.htm
+     */
+    public boolean isBST(){
+        return bstChecker(Integer.MIN_VALUE,Integer.MAX_VALUE,root);
+    }
+
+    //Complimentary to the above question/method
+    private boolean bstChecker(int min,int max,Node node){
+        if(node == null){
+            return true;
+        }
+
+        if(node.val < min || node.val > max){
+            return false;
+        }
+
+        return bstChecker(min,node.val-1,node.left)&&bstChecker(node.val+1,max,node.right);
+    }
 
     public class Node{
         int val;

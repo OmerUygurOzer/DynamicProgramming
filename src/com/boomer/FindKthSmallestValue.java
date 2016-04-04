@@ -1,5 +1,7 @@
 package com.boomer;
 
+import com.sun.org.apache.xml.internal.utils.Trie;
+
 import java.util.PriorityQueue;
 import java.util.Random;
 
@@ -22,6 +24,8 @@ public class FindKthSmallestValue {
         for(int i = 0;i<k;i++){
             kth = (int)heap.remove();
         }
+
+
 
         return kth;
     }
