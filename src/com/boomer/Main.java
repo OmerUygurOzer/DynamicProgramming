@@ -188,8 +188,9 @@ public class Main {
             //int [] ary = new int[]{2,0,1,1,2,0,1,1,2,0,1,2,0,0};
             //DutchFlagSort.sort(ary);
 
-            StringCombinator.combine("ab");
+            //StringCombinator.combine("ab");
 
+            T9Combinator.getT9Combo("232");
 
     }
 }

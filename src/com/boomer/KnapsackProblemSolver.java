@@ -11,6 +11,7 @@ public class KnapsackProblemSolver {
     private static final int MAX_VAL = 20;
     private static final int MIN = 0;
 
+    //Not done
     public static List<Integer> solve(int capacity,int itemCount){
         List<Integer> returner = new ArrayList<>();
         Random random = new Random();

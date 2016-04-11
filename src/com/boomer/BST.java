@@ -220,6 +220,13 @@ public class BST {
         return bstChecker(min,node.val-1,node.left)&&bstChecker(node.val+1,max,node.right);
     }
 
+
+    /*
+    Find the question at :
+     */
+
+
+
     public class Node{
         int val;
         Node right;
