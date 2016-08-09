@@ -37,7 +37,7 @@ public class T9Combinator {
 
     public static void getT9Combo(String input){
         char[] inputs = input.toCharArray();
-        combinator(inputs,new String(""),0);
+        combinator(inputs, "",0);
     }
 
 

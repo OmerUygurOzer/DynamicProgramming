@@ -190,7 +190,8 @@ public class Main {
 
             //StringCombinator.combine("ab");
 
-            T9Combinator.getT9Combo("232");
+           // T9Combinator.getT9Combo("237");
 
+          System.out.println(MinEditDistance.solve("OMER","TESTEI",4,6));
     }
 }
